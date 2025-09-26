@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entornos
+.env
+.env.local
+.env.*.local
+
+# Compilación y distribución
+dist/
+build/
+coverage/
+.tmp/
+temp/
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs y bases temporales
+*.log
+*.sqlite
+*.db
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración personal
+*.local.js
+*.secret.js
