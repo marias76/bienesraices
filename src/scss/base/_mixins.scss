@@ -1,3 +1,5 @@
+@use 'base/variables';
+
 /** Media Queries **/
 @mixin telefono {
     @media (min-width: #{$telefono}) {

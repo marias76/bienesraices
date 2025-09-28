@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+
+    /*@include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;        
+    }*/
+
+    @media (min-width: #{v.$tablet}) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+    @media (min-width: #{v.$tablet}) {
+        display: flex; 
+        align-items: center;       
+    }
+
+    a{
+        color: v.$blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+
+        @media (min-width: #{v.$tablet}) {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+            &last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}

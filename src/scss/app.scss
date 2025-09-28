@@ -1,5 +1,12 @@
+/*Base*/
 @use 'base/normalize';
 @use 'base/variables';
 @use 'base/mixins';
 @use 'base/globales';
 @use 'base/utilidades';
+
+/*UI*/
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/navegacion';
+
